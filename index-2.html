@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXBOT - Visual Question Answering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggle-dark-mode"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-messages"></div>
+        <div class="initial-message" id="initial-message">Hello! Please upload an image, and then you can ask me questions about it.</div>
+        <div class="chat-input">
+            <input type="file" id="image-input" accept="image/*" style="display: none;">
+            <button id="upload-button"><i class="fas fa-images"></i></button>
+            <input type="text" id="message-input" placeholder="Ask a question about the image...">
+            <button id="mic-button"><i class="fas fa-microphone"></i></button>
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
