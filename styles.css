@@ -108,6 +108,14 @@ body.dark-mode .user-message {
     border-top: 1px solid #ccc;
 }
 
+/* Image Size Control for Chat Input */
+.image-message img {
+    max-width: 100%; /* Ensures the image scales properly within the container */
+    max-height: 100px; /* Adjust height as needed */
+    object-fit: cover;
+    border: none; /* Removes any default border */
+}
+
 /* Input Field Styles */
 .chat-input input[type="text"] {
     flex-grow: 1;
